@@ -1,0 +1,24 @@
+.details-card {
+    display: flex;
+    background-color: #f5e6d3;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.image-section img {
+    width: 250px;
+}
+
+.details h2 {
+    color: #d32f2f;
+}
+
+.details h3 {
+    margin-top: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}

@@ -1,0 +1,34 @@
+<h3>Launch Date</h3>
+
+<div class="year-buttons">
+    <button 
+        *ngFor="let year of years" 
+        (click)="selectYear(year)"
+        [class.active]="selectedYear === year">
+        {{ year }}
+    </button>
+</div>
+
+<h3>Successful Launch</h3>
+
+<div class="year-buttons">
+    <button 
+        (click)="selectLaunch(true)"
+        [class.active]="launchSuccess === true">true</button>
+
+    <button 
+    (click)="selectLaunch(false)"
+    [class.active]="launchSuccess === false">false</button>
+</div>
+
+<h3>Successful Landing</h3>
+
+<div class="year-buttons">
+    <button 
+        (click)="selectLanding(true)"
+        [class.active]="landSuccess === true">true</button>
+
+    <button 
+        (click)="selectLanding(false)"
+        [class.active]="landSuccess === false">false</button>
+</div>

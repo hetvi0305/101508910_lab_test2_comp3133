@@ -1,0 +1,53 @@
+<div *ngIf="loading">
+    <p>Loading...</p>
+</div>
+
+<div *ngIf="!loading && mission" class="details-card">
+
+    <!-- LEFT IMAGE -->
+    <div class="image-section">
+        <img [src]="mission.links.mission_patch_small" alt="Mission Patch">
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="details">
+
+    <h2>🚀 {{ mission.mission_name }}</h2>
+
+    <p><b>Flight Number:</b> {{ mission.flight_number }}</p>
+    <p><b>Launch Year:</b> {{ mission.launch_year }}</p>
+
+    <h3>🚀 Rocket</h3>
+    <p><b>Name:</b> {{ mission.rocket.rocket_name }}</p>
+    <p><b>Type:</b> {{ mission.rocket.rocket_type }}</p>
+
+    <h3>📍 Launch Site</h3>
+    <p>{{ mission.launch_site.site_name_long }}</p>
+
+    <h3>📖 Details</h3>
+    <p>{{ mission.details || 'No details available.' }}</p>
+
+    <h3>🔗 More Info</h3>
+    <ul>
+        <li>
+            <a [href]="mission.links.article_link" target="_blank">Article</a>
+        </li>
+        <li>
+            <a [href]="mission.links.wikipedia" target="_blank">Wikipedia</a>
+        </li>
+        <li>
+            <a [href]="mission.links.video_link" target="_blank">Video</a>
+        </li>
+    </ul>
+
+    <p><b>Launch Success:</b> {{ mission.launch_success }}</p>
+    <p><b>Landing Success:</b> 
+        {{ mission.rocket?.first_stage?.cores[0]?.land_success }}
+    </p>
+    </div>
+
+</div>
+
+<div *ngIf="!loading && !mission">
+    <p>No mission found.</p>
+</div>

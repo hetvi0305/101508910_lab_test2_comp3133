@@ -1,0 +1,43 @@
+h1 {
+    font-size: 32px;
+    margin: 20px;
+}
+
+.main-container {
+    display: flex;
+}
+
+/* LEFT FILTER */
+.sidebar {
+    width: 200px;
+    padding: 10px;
+}
+
+/* RIGHT SIDE */
+.list-container {
+    flex: 1;
+}
+
+/* CARD STYLE */
+.card {
+    display: flex;
+    background-color: #7fb3d5;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.info h2 {
+    margin: 0;
+}
+
+.year {
+    color: #333;
+    font-weight: bold;
+}
