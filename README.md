@@ -135,8 +135,7 @@ http://localhost:4200
 
 The application is deployed using Vercel.
 
-🔗 **Live URL:** (Add your Vercel link here)
-🔗 **GitHub Repository:** (Add your GitHub link here)
+🔗 **Live URL:** (https://101508910-lab-test2-comp3133-three.vercel.app/)
 
 ---
 
